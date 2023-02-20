@@ -40,3 +40,29 @@ end
 unless a>45
     puts "Less than 45"
 end
+
+# Example 8
+unless a>4
+    puts "Less than 4"
+else
+    puts "Greater than 4"
+end
+
+# Example 9
+puts "Less than 45" unless a>45
+
+# Example 10 Case when
+age = 5
+case age
+when 0..2
+    puts "Baby"
+when 3..6
+    puts "Little child"
+when 7..12
+    puts "child"
+when 13..18
+    puts "Youth"
+else 
+    puts "Adult"
+end
+

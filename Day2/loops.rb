@@ -1,68 +1,58 @@
-# for
-for i in (1..10)
-    print i," "
+# while loop
+
+# Example 1
+i=0 
+while i<5 do
+    puts "Inside the loop #{i}"
+    i+=1
 end
 
-for x in ('a'..'d')
-    print x," "
-end
-
-# while
-x = 0
-while x<10
-    puts x
-    x+=1
-end
-
-puts "Modifier While"
-x=0
+# Example 2
 begin
-    print x," "
-    x+=1    
-end while x<10
+    puts "Inside the loop #{i}"
+    i+=1;
+end while i<10
 
-# until
-a=0
-until a>10
-    puts "a= #{a}"
-    a+=2
-end
-
-# until modifier
-x = 15
+# Example 3
 begin
-    puts x
-    x-=2
-end until x<=10
+    puts "Inside the loop #{i}"
+    i-=1;
+end until i<5
 
-# loop do
-puts "Loop do"
-z=0
-loop do 
-    puts z
-    z+=1
-    break if z==10
+# Example 4
+until i<0
+    puts "Inside the loop #{i}"
+    i-=1
+end until i<0
+
+# Example 5
+for i in 0..5
+    puts i
 end
 
-# break statement
-puts "Break statement"
-for i in(1..5)
-    break if i>3
-    print i," "
+# Example 6
+(0..5).each do |j|
+    puts j
 end
 
-# next statement
-for i in(1..20)
-    next if i%2==0
-    print i," "
+# Example 7
+for i in 0..5
+    if i==2 
+        break
+    end
+    puts i
 end
 
-# retry statement 
-# a = true
-# puts ""
-# for i in 1..10
-#     retry if i==5
-#     print i," "
-# end
+# Example 8
+puts "Example 8"
+for i in 0..5
+    if i<2 
+        next
+    end
+    puts i
+end
 
+# break
+# next
 # redo
+# retry
