@@ -4,8 +4,8 @@ puts Week::FIRST_DAY
 Week.weeks_in_month
 Week.weeks_in_year
 
-class Decade 
-# include Week
+class Decade
+include Week
     attr_accessor :no_of_years
     def initialize
         @no_of_years = 10

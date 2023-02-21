@@ -2,7 +2,8 @@ def p(*val)
     puts val.inspect
 end
 module A
-    def a1
+    myVar = 0
+    def A.a1
         p "A.a1"
     end
     def a2
@@ -20,11 +21,19 @@ module B
 end
 
 class Sample
-    include A include B
-    def s1
-        p "Sample.s1"
+
+    include A 
+    include B
+
+    def change
+        myVar= 5
     end
 end
 
 samp = Sample.new
-samp.a1
+# samp.A.a1
+# puts A::MYVAR
+samp.a2
+samp.b1
+samp.b2
+puts A::myVar
