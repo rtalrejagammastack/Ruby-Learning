@@ -1,4 +1,4 @@
-require_relative 'Week'
+require_relative 'support'
 
 puts Week::FIRST_DAY
 Week.weeks_in_month
