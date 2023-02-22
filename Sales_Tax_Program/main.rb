@@ -111,7 +111,7 @@ class Main
     end
 
     def pay_bill
-        puts "\n\n\t\t\t\t\t Total Amount to Pay:" + @totolAmount.to_s
+        puts "\n\n\t\t\t\t\t Total Amount to Pay : " + @totolAmount.to_s + "$"
     end
 
     def start
@@ -127,7 +127,7 @@ class Main
 
         pay_bill
 
-        puts "\n\t\t\t\t\t\tThankYou"
+        puts "\n\t\t\t\t\t\tThank You"
     end
 
 end
